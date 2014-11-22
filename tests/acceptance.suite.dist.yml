@@ -40,8 +40,7 @@ env:
                     site_name: 'Joomla'                    # Name of the Site
                     admin_email: 'admin@mydomain.com'      # email Id of the Admin
                     language: 'English (United Kingdom)'   # Language in which you want the Application to be Installed
-                    folder: '/home/travis/build/redCOMPONENT-COM/redmember2/' # Path to the Extension to be installed via Install from folder
-                    redcore_folder: 'redCORE/'             # The folder where redCORE submodule is located in the repository
+                    folder: '/home/travis/build/PATH_TO_EXTENSION/' # Path to the Extension to be installed via Install from folder
 
     joomla3:
         modules:
@@ -69,6 +68,5 @@ env:
                     site_name: 'Joomla'                    # Name of the Site
                     admin_email: 'admin@mydomain.com'      # email Id of the Admin
                     language: 'English (United Kingdom)'   # Language in which you want the Application to be Installed
-                    folder: '/home/travis/build/redCOMPONENT-COM/redmember2/' # Path to the Extension to be installed via Install from folder
-                    redcore_folder: 'redCORE/'             # The folder where redCORE submodule is located in the repository
+                    folder: '/home/travis/build/PATH_TO_EXTENSION/' # Path to the Extension to be installed via Install from folder
 error_level: "E_ALL & ~E_STRICT & ~E_DEPRECATED"
