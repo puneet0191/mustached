@@ -1,10 +1,12 @@
 <?php
 /**
- * @package     RedShop
+ * @package     mustached
  * @subpackage  Page Class
- * @copyright   Copyright (C) 2012 - 2014 redCOMPONENT.com. All rights reserved.
+ * @copyright   Copyright (C) 2014 mustached.org All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
+
+//An example of Page Object using Joomla's extension Manager Page, Page class for any of the page's could be build similar way
 
 /**
  * Class ExtensionManagerPage
