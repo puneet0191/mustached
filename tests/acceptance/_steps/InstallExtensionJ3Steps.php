@@ -1,8 +1,8 @@
 <?php
 /**
- * @package     RedMEMBER2
+ * @package     mustached
  * @subpackage  Step Class
- * @copyright   Copyright (C) 2012 - 2014 redCOMPONENT.com. All rights reserved.
+ * @copyright   Copyright (C) 2014 mustached.org All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -28,29 +28,21 @@ class InstallExtensionJ3Steps extends \AcceptanceTester
 	{
 		$I = $this;
 		$this->acceptanceTester = $I;
-		$I->wantTo('install redCORE');
-		$I->amOnPage(\ExtensionManagerPage::$URL);
-		$config = $I->getConfig();
-		$I->click('Install from Directory');
-		$I->wantTo('Install redCORE framework before installing the extension');
-		$I->fillField(\ExtensionManagerPage::$extensionDirectoryPath, $config['folder'] . $config['redcore_folder']);
-		$I->click(\ExtensionManagerPage::$installButton);
-		$I->waitForText('Installing component was successful');
-		$I->wantTo('install redMEMBER2');
+		$I->wantTo('install Extension');
 		$I->amOnPage(\ExtensionManagerPage::$URL);
 		$config = $I->getConfig();
 		$I->click('Install from Directory');
 		$I->fillField(\ExtensionManagerPage::$extensionDirectoryPath, $config['folder']);
 		$I->click(\ExtensionManagerPage::$installButton);
-		$I->waitForText('Installing component was successful');
+		$I->waitForText('Installing component was successful');  //This text Should be moved to Page Object for Extension Manager
 		$I->see(\ExtensionManagerPage::$installSuccessMessage);
 	}
 
-	/**
-     * Function to Install Demo Data for the Extension
-     *
-     * @return void
-     */
+        /**
+         * Function to Install Demo Data for the Extension
+         *
+         * @return void
+         */
 	public function installSampleData()
 	{
     	$I = $this;
