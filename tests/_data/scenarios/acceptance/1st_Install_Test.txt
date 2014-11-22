@@ -1,0 +1,6 @@
+I WANT TO EXECUTE JOOMLA INSTALLATION
+
+I install joomla2 ""
+I do admin login ""
+I install extension 'redMEMBER 2.x'
+I install sample data ""
