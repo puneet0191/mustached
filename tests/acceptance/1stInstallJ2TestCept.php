@@ -1,8 +1,8 @@
 <?php
 /**
- * @package     redMEMBER
- * @subpackage  Cept
- * @copyright   Copyright (C) 2012 - 2014 redCOMPONENT.com. All rights reserved.
+ * @package     mustached
+ * @subpackage  Cept Class
+ * @copyright   Copyright (C) 2014 mustached.org All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -25,8 +25,8 @@ $I->wantTo('Execute Log in at Joomla Administrator');
 $I->doAdminLogin();
 $I = new AcceptanceTester\InstallExtensionJ2Steps($scenario);
 
-$I->wantTo('Install redMEMBER 2 extension');
-$I->installExtension('redMEMBER 2.x');
-$I->wantTo('Install redMEMBER2 demo data');
+$I->wantTo('Install Joomla Extension');
+$I->installExtension('EXTENSION_NAME');  //Name of the extension which we want to install in Joomla
+$I->wantTo('Install Demo Data for the Extension');
 $I->installSampleData();
 
