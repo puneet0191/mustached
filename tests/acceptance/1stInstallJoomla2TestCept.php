@@ -2,7 +2,7 @@
 /**
  * @package     mustached
  * @subpackage  Cept
- * @copyright   Copyright (C) 2012 - 2014 redCOMPONENT.com. All rights reserved.
+ * @copyright   2014 mustached.org
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
